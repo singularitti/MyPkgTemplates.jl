@@ -49,12 +49,12 @@ julia> import Pkg; Pkg.add("{{{PKG}}}")
 - [**STABLE**][docs-stable-url] — **documentation of the most recently tagged version.**
 - [**DEV**][docs-dev-url] — _documentation of the in-development version._
 
-## Project Status
+## Project status
 
 The package is tested against, and being developed for, Julia `1.6` and above on Linux,
 macOS, and Windows.
 
-## Questions and Contributions
+## Questions and contributions
 
 Usage questions can be posted on [our discussion page][discussions-url].
 
