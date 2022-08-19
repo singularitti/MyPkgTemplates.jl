@@ -1,4 +1,4 @@
-# Style guide and design principles
+# [Style guide and design principles](@id style)
 
 ```@contents
 Pages = ["style.md"]
@@ -27,25 +27,26 @@ If not following, your pull requests may not be accepted.
     started). If large changes are needed, consider separating them into
     another pull request.
 
-### Use `JuliaFormatter`
+### [Run `JuliaFormatter`](@id formatter)
 
-{{{PKG}}} uses [JuliaFormatter.jl](https://github.com/domluna/JuliaFormatter.jl) as
+`{{{PKG}}}` uses [`JuliaFormatter`](https://github.com/domluna/JuliaFormatter.jl) as
 an auto-formatting tool.
 
 We use the options contained in [`.JuliaFormatter.toml`](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/master/.JuliaFormatter.toml).
 
-To format your code, `cd` to the {{{PKG}}} directory, then run:
+To format your code, `cd` to the `{{{PKG}}}` directory, then run:
 
 ```@repl
 using Pkg
 Pkg.add("JuliaFormatter")
+using JuliaFormatter: format
 format("docs")
 format("src")
 format("test")
 ```
 
 !!! info
-    A continuous integration check verifies that all PRs made to {{{PKG}}} have
+    A continuous integration check verifies that all PRs made to `{{{PKG}}}` have
     passed the formatter.
 
 The following sections outline extra style guide points that are not fixed
@@ -64,8 +65,8 @@ integrated. So to format your code, follow the steps listed
 
 ## Design principles
 
-We adopt some [`SciML`](https://sciml.ai/) design guidelines here.
-Please read it before contributing!
+We adopt some [`SciML`](https://sciml.ai/) design [guidelines](https://github.com/SciML/SciMLStyle)
+here. Please read it before contributing!
 
 ### Consistency vs Adherence
 

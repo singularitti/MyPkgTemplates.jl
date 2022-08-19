@@ -6,10 +6,10 @@ Pages = ["contributing.md"]
 
 Welcome! This document explains some ways you can contribute to `{{{PKG}}}`.
 
-## Code of Conduct
+## Code of conduct
 
 This project and everyone participating in it is governed by the
-[`{{{PKG}}}` Code of Conduct](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/master/CODE_OF_CONDUCT.md).
+[`{{{PKG}}}` Code of Conduct](https://github.com/MineralsCloud/.github/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code.
 
 ## Join the community forum
@@ -103,7 +103,7 @@ Similar to [installation](@ref), open the Julia REPL and run:
 ```@repl
 using Pkg
 Pkg.update()
-pkg"dev {{{PKG}}}"
+Pkg.develop("{{{PKG}}}")
 ```
 
 Then the package will be cloned to your local machine. On *nix systems, the default path is
@@ -126,7 +126,7 @@ to instantiate the project.
 
 !!! note
     In the following, replace any instance of `GITHUB_ACCOUNT` with your GitHub
-    user name.
+    username.
 
 The next step is to checkout a development branch. In a terminal (or command
 prompt on Windows), run:
@@ -150,7 +150,7 @@ directory.
 
 Make sure you:
 
-* Follow the [Style guide](@ref) and run [`JuliaFormatter.jl`](@ref)
+* Follow the [Style guide](@ref style) and [run `JuliaFormatter.jl`](@ref formatter)
 * Add tests and documentation for any changes or new features
 
 !!! tip
@@ -165,8 +165,9 @@ running:
 
 ```@repl
 cd("~/.julia/dev/{{{PKG}}}")
-] activate .
-] test
+using Pkg
+Pkg.activate(".")
+Pkg.test()
 ```
 
 !!! warning
@@ -187,7 +188,8 @@ Open Julia, then run:
 
 ```@repl
 cd("~/.julia/dev/{{{PKG}}}/docs")
-] activate .
+using Pkg
+Pkg.activate(".")
 include("src/make.jl")
 ```
 

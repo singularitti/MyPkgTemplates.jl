@@ -5,7 +5,7 @@ If you have some questions about how to use this code, you are welcome to
 [discuss with us](https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions).
 
 _If you have additional tips, please either
-[report an issue](https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues/new)
+[report an issue](https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues/new) or
 [submit a PR](https://github.com/{{{USER}}}/{{{PKG}}}.jl/compare) with suggestions._
 
 ## Installation problems
