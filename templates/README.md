@@ -5,21 +5,21 @@
 | [![Stable][docs-stable-img]][docs-stable-url] [![Dev][docs-dev-img]][docs-dev-url] | [![Build Status][gha-img]][gha-url] [![Build Status][appveyor-img]][appveyor-url] [![Build Status][cirrus-img]][cirrus-url] [![pipeline status][gitlab-img]][gitlab-url] [![Coverage][codecov-img]][codecov-url] | [![GitHub license][license-img]][license-url] [![Code Style: Blue][style-img]][style-url] |
 
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
-[docs-stable-url]: https://singularitti.github.io/MyPkgTemplates.jl/stable
+[docs-stable-url]: https://{{{USER}}}.github.io/{{{PKG}}}.jl/stable
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
-[docs-dev-url]: https://singularitti.github.io/MyPkgTemplates.jl/dev
-[gha-img]: https://github.com/singularitti/MyPkgTemplates.jl/workflows/CI/badge.svg
-[gha-url]: https://github.com/singularitti/MyPkgTemplates.jl/actions
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/singularitti/MyPkgTemplates.jl?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/singularitti/MyPkgTemplates-jl
-[cirrus-img]: https://api.cirrus-ci.com/github/singularitti/MyPkgTemplates.jl.svg
-[cirrus-url]: https://cirrus-ci.com/github/singularitti/MyPkgTemplates.jl
-[gitlab-img]: https://gitlab.com/singularitti/MyPkgTemplates.jl/badges/master/pipeline.svg
-[gitlab-url]: https://gitlab.com/singularitti/MyPkgTemplates.jl/-/pipelines
-[codecov-img]: https://codecov.io/gh/singularitti/MyPkgTemplates.jl/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/singularitti/MyPkgTemplates.jl
-[license-img]: https://img.shields.io/github/license/singularitti/MyPkgTemplates.jl
-[license-url]: https://github.com/singularitti/MyPkgTemplates.jl/blob/master/LICENSE
+[docs-dev-url]: https://{{{USER}}}.github.io/{{{PKG}}}.jl/dev
+[gha-img]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/workflows/CI/badge.svg
+[gha-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/actions
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/singularitti/{{{PKG}}}.jl?svg=true
+[appveyor-url]: https://ci.appveyor.com/project/singularitti/{{{PKG}}}-jl
+[cirrus-img]: https://api.cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl.svg
+[cirrus-url]: https://cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl
+[gitlab-img]: https://gitlab.com/singularitti/{{{PKG}}}.jl/badges/master/pipeline.svg
+[gitlab-url]: https://gitlab.com/singularitti/{{{PKG}}}.jl/-/pipelines
+[codecov-img]: https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl
+[license-img]: https://img.shields.io/github/license/{{{USER}}}/{{{PKG}}}.jl
+[license-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/master/LICENSE
 [style-img]: https://img.shields.io/badge/code%20style-blue-4495d1.svg
 [style-url]: https://github.com/invenia/BlueStyle
 
