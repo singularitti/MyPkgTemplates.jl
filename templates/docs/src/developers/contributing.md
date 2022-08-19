@@ -9,7 +9,7 @@ Welcome! This document explains some ways you can contribute to `{{{PKG}}}`.
 ## Code of conduct
 
 This project and everyone participating in it is governed by the
-[`{{{PKG}}}` Code of Conduct](https://github.com/MineralsCloud/.github/blob/main/CODE_OF_CONDUCT.md).
+["Contributor Covenant Code of Conduct"](https://github.com/MineralsCloud/.github/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code.
 
 ## Join the community forum
