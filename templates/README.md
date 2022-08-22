@@ -10,7 +10,7 @@
 [docs-dev-url]: https://{{{USER}}}.github.io/{{{PKG}}}.jl/dev
 [gha-img]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/workflows/CI/badge.svg
 [gha-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/actions
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/singularitti/{{{PKG}}}.jl?svg=true
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/{{{USER}}}/{{{PKG}}}.jl?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/singularitti/{{{PKG}}}-jl
 [cirrus-img]: https://api.cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl.svg
 [cirrus-url]: https://cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl
