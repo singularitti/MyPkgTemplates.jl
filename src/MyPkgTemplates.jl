@@ -13,9 +13,7 @@ using PkgTemplates:
 
 import PkgTemplates: view, hook
 
-export build, default_dir
-
-default_dir() = "templates"
+export build
 
 @plugin struct MyDocs <: Plugin
     installation_md::String = "docs/src/installation.md"
