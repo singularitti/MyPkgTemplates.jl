@@ -44,12 +44,12 @@ function hook(p::MyDocs, t::Template, pkg_dir::AbstractString)
     end
 end
 
-function build(; user="MineralsCloud", dir="~/.julia/dev")
+function build(; user="MineralsCloud", dir="~/.julia/dev", branch="main")
     return Template(;
         user=user,
         dir=dir,
         plugins=[
-            Git(),
+            Git(; branch=branch),
             GitHubActions(;
                 x86=true,
                 osx=true,
