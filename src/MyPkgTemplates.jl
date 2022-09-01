@@ -18,7 +18,6 @@ export build, default_dir
 default_dir() = "templates"
 
 @plugin struct MyDocs <: Plugin
-    readme_md::String = join(["templates", "README.md"], '/')
     installation_md::String = "docs/src/installation.md"
     contributing_md::String = "docs/src/developers/contributing.md"
     style_md::String = "docs/src/developers/style.md"
@@ -66,7 +65,7 @@ function build(; user="MineralsCloud", dir="~/.julia/dev")
             License(),
             Codecov(),
             Documenter{GitHubActions}(; index_md="templates/docs/src/index.md"),
-            !Readme,
+            Readme(; file="templates/README.md"),
             MyDocs(),
         ],
     )
