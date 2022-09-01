@@ -64,8 +64,8 @@ function build(; user="MineralsCloud", dir="~/.julia/dev")
             TagBot(),
             License(),
             Codecov(),
-            Documenter{GitHubActions}(; index_md="templates/docs/src/index.md"),
-            Readme(; file="templates/README.md"),
+            Documenter{GitHubActions}(; index_md="docs/src/index.md"),
+            Readme(; file="README.md"),
             MyDocs(),
         ],
     )
