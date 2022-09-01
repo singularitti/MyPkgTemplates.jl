@@ -19,14 +19,10 @@ default_dir() = "templates"
 
 @plugin struct MyDocs <: Plugin
     readme_md::String = join(["templates", "README.md"], '/')
-    installation_md::String = join(["templates", "docs", "src", "installation.md"], '/')
-    contributing_md::String = join(
-        ["templates", "docs", "src", "developers", "contributing.md"], '/'
-    )
-    style_md::String = join(["templates", "docs", "src", "developers", "style.md"], '/')
-    troubleshooting_md::String = join(
-        ["templates", "docs", "src", "troubleshooting.md"], '/'
-    )
+    installation_md::String = "docs/src/installation.md"
+    contributing_md::String = "docs/src/developers/contributing.md"
+    style_md::String = "docs/src/developers/style.md"
+    troubleshooting_md::String = "docs/src/troubleshooting.md"
 end
 
 function view(::MyDocs, t::Template, pkg::AbstractString)
