@@ -32,7 +32,7 @@ If not following, your pull requests may not be accepted.
 `{{{PKG}}}` uses [`JuliaFormatter`](https://github.com/domluna/JuliaFormatter.jl) as
 an auto-formatting tool.
 
-We use the options contained in [`.JuliaFormatter.toml`](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/master/.JuliaFormatter.toml).
+We use the options contained in [`.JuliaFormatter.toml`](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/{{{branch}}}/.JuliaFormatter.toml).
 
 To format your code, `cd` to the `{{{PKG}}}` directory, then run:
 

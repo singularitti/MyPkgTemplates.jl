@@ -14,12 +14,12 @@
 [appveyor-url]: https://ci.appveyor.com/project/singularitti/{{{PKG}}}-jl
 [cirrus-img]: https://api.cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl.svg
 [cirrus-url]: https://cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl
-[gitlab-img]: https://gitlab.com/singularitti/{{{PKG}}}.jl/badges/master/pipeline.svg
+[gitlab-img]: https://gitlab.com/singularitti/{{{PKG}}}.jl/badges/{{{branch}}}/pipeline.svg
 [gitlab-url]: https://gitlab.com/singularitti/{{{PKG}}}.jl/-/pipelines
-[codecov-img]: https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl/branch/master/graph/badge.svg
+[codecov-img]: https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl/branch/{{{branch}}}/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl
 [license-img]: https://img.shields.io/github/license/{{{USER}}}/{{{PKG}}}.jl
-[license-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/master/LICENSE
+[license-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/{{{branch}}}/LICENSE
 [style-img]: https://img.shields.io/badge/code%20style-blue-4495d1.svg
 [style-url]: https://github.com/invenia/BlueStyle
 
