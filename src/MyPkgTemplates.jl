@@ -24,6 +24,9 @@ end
 
 function view(::MyDocs, t::Template, pkg::AbstractString)
     return Dict("USER" => t.user, "PKG" => pkg, "jl" => "1.6.7")
+
+function getbranch(t::Template)
+    return only(filter(x -> x isa Git, t.plugins)).branch
 end
 
 function hook(p::MyDocs, t::Template, pkg_dir::AbstractString)
