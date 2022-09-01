@@ -11,7 +11,7 @@ using PkgTemplates:
     @plugin,
     @with_kw_noshow
 
-import PkgTemplates: view, hook
+import PkgTemplates: view, user_view, hook
 
 export build
 
@@ -23,7 +23,12 @@ export build
 end
 
 function view(::MyDocs, t::Template, pkg::AbstractString)
-    return Dict("USER" => t.user, "PKG" => pkg, "jl" => "1.6.7")
+    return Dict("USER" => t.user, "PKG" => pkg, "jl" => "1.6.7", "branch" => getbranch(t))
+end
+
+function user_view(::Readme, t::Template, pkg::AbstractString)
+    return Dict("USER" => t.user, "PKG" => pkg, "branch" => getbranch(t))
+end
 
 function getbranch(t::Template)
     return only(filter(x -> x isa Git, t.plugins)).branch
