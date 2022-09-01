@@ -1,7 +1,7 @@
 # [Installation guide](@id installation)
 
 Here are the installation instructions for package
-[`MyPkgTemplates`](https://github.com/singularitti/MyPkgTemplates.jl).
+[`{{{PKG}}}`](https://github.com/{{{USER}}}/{{{PKG}}}.jl).
 If you have trouble installing it, please refer to our [Troubleshooting](@ref) page
 for more information.
 
@@ -82,7 +82,7 @@ installed on your machine. For Mac computers with M-series processors, this pack
 dependencies may not work. Please install the Intel-compatible version of Julia (for macOS
 x86-64) if any platform-related error occurs.
 
-## Install `MyPkgTemplates`
+## Install `{{{PKG}}}`
 
 Now I am using [macOS](https://en.wikipedia.org/wiki/MacOS) as a standard
 platform to explain the following steps:
@@ -97,13 +97,13 @@ platform to explain the following steps:
 
    julia> Pkg.update()
 
-   julia> Pkg.add("MyPkgTemplates")
+   julia> Pkg.add("{{{PKG}}}")
    ```
 
 3. Run
 
    ```julia-repl
-   julia> using MyPkgTemplates
+   julia> using {{{PKG}}}
    ```
 
    and have fun!
@@ -111,32 +111,32 @@ platform to explain the following steps:
 4. While using, please keep this Julia session alive. Restarting might cost some time.
 
 If you want to install the latest in-development (probably buggy)
-version of `MyPkgTemplates`, type
+version of `{{{PKG}}}`, type
 
 ```@repl
 using Pkg
 Pkg.update()
-pkg"add https://github.com/singularitti/MyPkgTemplates.jl"
+pkg"add https://github.com/{{{USER}}}/{{{PKG}}}.jl"
 ```
 
 in the second step above.
 
-## Update `MyPkgTemplates`
+## Update `{{{PKG}}}`
 
 Please [watch](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/setting-up-notifications/configuring-notifications#configuring-your-watch-settings-for-an-individual-repository)
-our [GitHub repository](https://github.com/singularitti/MyPkgTemplates.jl)
+our [GitHub repository](https://github.com/{{{USER}}}/{{{PKG}}}.jl)
 for new releases.
-Once we release a new version, you can update `MyPkgTemplates` by typing
+Once we release a new version, you can update `{{{PKG}}}` by typing
 
 ```@repl
 using Pkg
-Pkg.update("MyPkgTemplates")
+Pkg.update("{{{PKG}}}")
 Pkg.gc()
 ```
 
 in the Julia REPL.
 
-## Uninstall and reinstall `MyPkgTemplates`
+## Uninstall and reinstall `{{{PKG}}}`
 
 Sometimes errors may occur if the package is not properly installed.
 In this case, you may want to uninstall and reinstall the package. Here is how to do that:
@@ -146,10 +146,10 @@ In this case, you may want to uninstall and reinstall the package. Here is how t
    ```julia-repl
    julia> using Pkg
 
-   julia> Pkg.rm("MyPkgTemplates")
+   julia> Pkg.rm("{{{PKG}}}")
 
    julia> Pkg.gc()
    ```
 
 2. Press `ctrl+d` to quit the current session. Start a new Julia session and
-   reinstall `MyPkgTemplates`.
+   reinstall `{{{PKG}}}`.

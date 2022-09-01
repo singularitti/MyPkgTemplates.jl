@@ -2,11 +2,11 @@
 
 This page collects some possible errors you may encounter and trick how to fix them.
 If you have some questions about how to use this code, you are welcome to
-[discuss with us](https://github.com/singularitti/MyPkgTemplates.jl/discussions).
+[discuss with us](https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions).
 
 _If you have additional tips, please either
-[report an issue](https://github.com/singularitti/MyPkgTemplates.jl/issues/new) or
-[submit a PR](https://github.com/singularitti/MyPkgTemplates.jl/compare) with suggestions._
+[report an issue](https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues/new) or
+[submit a PR](https://github.com/{{{USER}}}/{{{PKG}}}.jl/compare) with suggestions._
 
 ## Installation problems
 
@@ -28,7 +28,7 @@ already have Julia installed as a module, you may
 just `module load julia` to use it. If not, either install by yourself or contact your
 administrator.
 
-## Loading `MyPkgTemplates`
+## Loading `{{{PKG}}}`
 
 ### Why is Julia compiling/loading modules so slow? What can I do?
 

@@ -21,20 +21,20 @@ before contributing to this package.
 If not following, your pull requests may not be accepted.
 
 !!! info
-    The style guide is always a work in progress, and not all MyPkgTemplates code
-    follows the rules. When modifying MyPkgTemplates, please fix the style violations
+    The style guide is always a work in progress, and not all {{{PKG}}} code
+    follows the rules. When modifying {{{PKG}}}, please fix the style violations
     of the surrounding code (i.e., leave the code tidier than when you
     started). If large changes are needed, consider separating them into
     another pull request.
 
 ### [Run `JuliaFormatter`](@id formatter)
 
-MyPkgTemplates uses [JuliaFormatter.jl](https://github.com/domluna/JuliaFormatter.jl) as
+`{{{PKG}}}` uses [`JuliaFormatter`](https://github.com/domluna/JuliaFormatter.jl) as
 an auto-formatting tool.
 
-We use the options contained in [`.JuliaFormatter.toml`](https://github.com/singularitti/MyPkgTemplates.jl/blob/master/.JuliaFormatter.toml).
+We use the options contained in [`.JuliaFormatter.toml`](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/{{{branch}}}/.JuliaFormatter.toml).
 
-To format your code, `cd` to the MyPkgTemplates directory, then run:
+To format your code, `cd` to the `{{{PKG}}}` directory, then run:
 
 ```@repl
 using Pkg
@@ -46,7 +46,7 @@ format("test")
 ```
 
 !!! info
-    A continuous integration check verifies that all PRs made to MyPkgTemplates have
+    A continuous integration check verifies that all PRs made to `{{{PKG}}}` have
     passed the formatter.
 
 The following sections outline extra style guide points that are not fixed

@@ -1,15 +1,15 @@
 ```@meta
-CurrentModule = MyPkgTemplates
+CurrentModule = {{{PKG}}}
 ```
 
-# MyPkgTemplates
+# {{{PKG}}}
 
-Documentation for [`MyPkgTemplates`](https://github.com/singularitti/MyPkgTemplates.jl).
+Documentation for [`{{{PKG}}}`](https://github.com/{{{USER}}}/{{{PKG}}}.jl).
 
 See the [Index](@ref main-index) for the complete list of documented functions
 and types.
 
-The code is [hosted on GitHub](https://github.com/singularitti/MyPkgTemplates.jl),
+The code is [hosted on GitHub](https://github.com/{{{USER}}}/{{{PKG}}}.jl),
 with some continuous integration services to test its validity.
 
 This repository is created and maintained by [@singularitti](https://github.com/singularitti).
@@ -20,22 +20,22 @@ You are very welcome to contribute.
 The package can be installed with the Julia package manager.
 From the Julia REPL, type `]` to enter the Pkg REPL mode and run:
 
-```
-pkg> add MyPkgTemplates
+```julia
+pkg> add {{{PKG}}}
 ```
 
 Or, equivalently, via the `Pkg` API:
 
-```julia
-julia> import Pkg; Pkg.add("MyPkgTemplates")
+```@repl
+import Pkg; Pkg.add("{{{PKG}}}")
 ```
 
 ## Documentation
 
-- [**STABLE**](https://singularitti.github.io/MyPkgTemplates.jl/stable): **documentation of the most recently tagged version.**
-- [**DEV**](https://singularitti.github.io/MyPkgTemplates.jl/dev): _documentation of the in-development version._
+- [**STABLE**](https://{{{USER}}}.github.io/{{{PKG}}}.jl/stable) — **documentation of the most recently tagged version.**
+- [**DEV**](https://{{{USER}}}.github.io/{{{PKG}}}.jl/dev) — _documentation of the in-development version._
 
-## Project Status
+## Project status
 
 The package is tested against, and being developed for, Julia `1.6` and above on Linux,
 macOS, and Windows.
@@ -43,10 +43,10 @@ macOS, and Windows.
 ## Questions and contributions
 
 Usage questions can be posted on
-[our discussion page](https://github.com/MineralsCloud/MyPkgTemplates.jl/discussions).
+[our discussion page](https://github.com/MineralsCloud/{{{PKG}}}.jl/discussions).
 
 Contributions are very welcome, as are feature requests and suggestions. Please open an
-[issue](https://github.com/MineralsCloud/MyPkgTemplates.jl/issues)
+[issue](https://github.com/MineralsCloud/{{{PKG}}}.jl/issues)
 if you encounter any problems. The [contributing](@ref) page has
 a few guidelines that should be followed when opening pull requests and contributing code.
 
@@ -55,9 +55,9 @@ a few guidelines that should be followed when opening pull requests and contribu
 ```@contents
 Pages = [
     "installation.md",
-    "troubleshooting.md",
     "developers/contributing.md",
     "developers/style.md",
+    "troubleshooting.md",
 ]
 Depth = 3
 ```
