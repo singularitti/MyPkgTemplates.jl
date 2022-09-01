@@ -64,4 +64,3 @@ a few guidelines that should be followed when opening pull requests and contribu
 
 [discussions-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions
 [issues-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues
-[contrib-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions
