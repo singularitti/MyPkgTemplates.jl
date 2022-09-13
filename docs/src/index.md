@@ -43,10 +43,10 @@ macOS, and Windows.
 ## Questions and contributions
 
 Usage questions can be posted on
-[our discussion page](https://github.com/MineralsCloud/{{{PKG}}}.jl/discussions).
+[our discussion page](https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions).
 
 Contributions are very welcome, as are feature requests and suggestions. Please open an
-[issue](https://github.com/MineralsCloud/{{{PKG}}}.jl/issues)
+[issue](https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues)
 if you encounter any problems. The [contributing](@ref) page has
 a few guidelines that should be followed when opening pull requests and contributing code.
 
