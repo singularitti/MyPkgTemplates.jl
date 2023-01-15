@@ -4,7 +4,7 @@ CurrentModule = {{{PKG}}}
 
 # {{{PKG}}}
 
-Documentation for [`{{{PKG}}}`](https://github.com/{{{USER}}}/{{{PKG}}}.jl).
+Documentation for [{{{PKG}}}](https://github.com/{{{USER}}}/{{{PKG}}}.jl).
 
 See the [Index](@ref main-index) for the complete list of documented functions
 and types.

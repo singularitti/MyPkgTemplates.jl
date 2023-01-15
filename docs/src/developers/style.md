@@ -29,12 +29,12 @@ If not following, your pull requests may not be accepted.
 
 ### [Run `JuliaFormatter`](@id formatter)
 
-`{{{PKG}}}` uses [`JuliaFormatter`](https://github.com/domluna/JuliaFormatter.jl) as
+{{{PKG}}} uses [`JuliaFormatter`](https://github.com/domluna/JuliaFormatter.jl) as
 an auto-formatting tool.
 
 We use the options contained in [`.JuliaFormatter.toml`](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/{{{branch}}}/.JuliaFormatter.toml).
 
-To format your code, `cd` to the `{{{PKG}}}` directory, then run:
+To format your code, `cd` to the {{{PKG}}} directory, then run:
 
 ```@repl
 using Pkg
@@ -46,7 +46,7 @@ format("test")
 ```
 
 !!! info
-    A continuous integration check verifies that all PRs made to `{{{PKG}}}` have
+    A continuous integration check verifies that all PRs made to {{{PKG}}} have
     passed the formatter.
 
 The following sections outline extra style guide points that are not fixed
