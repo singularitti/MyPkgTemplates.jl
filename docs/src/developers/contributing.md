@@ -1,4 +1,4 @@
-# [Contributing](@id contributing)
+# Contributing
 
 ```@contents
 Pages = ["contributing.md"]
