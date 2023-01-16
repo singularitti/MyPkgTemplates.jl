@@ -27,9 +27,9 @@ If not following, your pull requests may not be accepted.
     started). If large changes are needed, consider separating them into
     another pull request.
 
-### [Run `JuliaFormatter`](@id formatter)
+### [Run JuliaFormatter](@id formatter)
 
-{{{PKG}}} uses [`JuliaFormatter`](https://github.com/domluna/JuliaFormatter.jl) as
+{{{PKG}}} uses [JuliaFormatter](https://github.com/domluna/JuliaFormatter.jl) as
 an auto-formatting tool.
 
 We use the options contained in [`.JuliaFormatter.toml`](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/{{{branch}}}/.JuliaFormatter.toml).
@@ -40,9 +40,9 @@ To format your code, `cd` to the {{{PKG}}} directory, then run:
 using Pkg
 Pkg.add("JuliaFormatter")
 using JuliaFormatter: format
-format("docs")
-format("src")
-format("test")
+format("docs");
+format("src");
+format("test");
 ```
 
 !!! info
@@ -50,7 +50,7 @@ format("test")
     passed the formatter.
 
 The following sections outline extra style guide points that are not fixed
-automatically by `JuliaFormatter`.
+automatically by JuliaFormatter.
 
 ### Use the Julia extension for Visual Studio Code
 
@@ -59,7 +59,7 @@ Please use [VS Code](https://code.visualstudio.com/) with the
 to edit, format, and test your code.
 We do not recommend using other editors to edit your code for the time being.
 
-This extension already has [`JuliaFormatter`](https://github.com/domluna/JuliaFormatter.jl)
+This extension already has [JuliaFormatter](https://github.com/domluna/JuliaFormatter.jl)
 integrated. So to format your code, follow the steps listed
 [here](https://www.julia-vscode.org/docs/stable/userguide/formatter/).
 
