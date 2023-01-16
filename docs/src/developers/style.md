@@ -108,9 +108,9 @@ end
 ```
 
 would not be preferred for two reasons. One is that it assumes `A` uses one-based indexing, which would fail in cases
-like [`OffsetArrays`](https://github.com/JuliaArrays/OffsetArrays.jl) and [`FFTViews`](https://github.com/JuliaArrays/FFTViews.jl).
+like [OffsetArrays](https://github.com/JuliaArrays/OffsetArrays.jl) and [FFTViews](https://github.com/JuliaArrays/FFTViews.jl).
 Another issue is that it requires indexing, while not all array types support indexing (for example,
-[`CuArrays`](https://github.com/JuliaGPU/CuArrays.jl)). A more generic compatible implementation of this function would be
+[CuArrays](https://github.com/JuliaGPU/CuArrays.jl)). A more generic compatible implementation of this function would be
 to use broadcast, for example:
 
 ```@repl
@@ -143,7 +143,7 @@ one should implement a `BroadcastStyle` as suggested by the documentation instea
 to bypass the broadcast system via `copyto!` overloads.
 
 When interface functions are missing, these should be added to Base Julia or an interface package,
-like [`ArrayInterface.jl`](https://github.com/JuliaArrays/ArrayInterface.jl). Such traits should be
+like [ArrayInterface.jl](https://github.com/JuliaArrays/ArrayInterface.jl). Such traits should be
 declared and used when appropriate. For example, if a line of code requires mutation, the trait
 `ArrayInterface.ismutable(A)` should be checked before attempting to mutate, and informative error
 messages should be written to capture the immutable case (or, an alternative code which does not
@@ -193,7 +193,7 @@ is recommended. Some macros in this category are:
 - [`@..`](https://github.com/YingboMa/FastBroadcast.jl)
 
 Some performance macros, like `@simd`, `@threads`, or
-[`@turbo` from `LoopVectorization.jl`](https://github.com/JuliaSIMD/LoopVectorization.jl),
+[`@turbo` from LoopVectorization.jl](https://github.com/JuliaSIMD/LoopVectorization.jl),
 make an exception in that their generated code may be foreign to many users. However, they still are
 classified as appropriate uses as they are syntactic sugar since they do (or should) not change the behavior
 of the program in measurable ways other than performance.
@@ -205,29 +205,29 @@ deeper within a package. For example, if one knows that `f(u0,p)` will error unl
 should be caught at the start of the function to throw a domain specific error, for example "parameters and initial
 condition should be the same size".
 
-### Subpackaging and interface packages is preferred over conditional modules via `Requires.jl`
+### Subpackaging and interface packages is preferred over conditional modules via Requires.jl
 
-`Requires.jl` should be avoided at all costs. If an interface package exists, such as
-[`ChainRulesCore.jl`](https://github.com/JuliaDiff/ChainRulesCore.jl) for defining automatic differentiation
-rules without requiring a dependency on the whole `ChainRules.jl` system, or
-[`RecipesBase.jl`](https://github.com/JuliaPlots/RecipesBase.jl) which allows for defining `Plots.jl`
-plot recipes without a dependency on `Plots.jl`, a direct dependency on these interface packages is
+Requires.jl should be avoided at all costs. If an interface package exists, such as
+[ChainRulesCore.jl](https://github.com/JuliaDiff/ChainRulesCore.jl) for defining automatic differentiation
+rules without requiring a dependency on the whole ChainRules.jl system, or
+[RecipesBase.jl](https://github.com/JuliaPlots/RecipesBase.jl) which allows for defining Plots.jl
+plot recipes without a dependency on Plots.jl, a direct dependency on these interface packages is
 preferred.
 
-Otherwise, instead of resorting to a conditional dependency using `Requires.jl`, it is
-preferred one creates subpackages, i.e. smaller independent packages kept within the same GitHub repository
+Otherwise, instead of resorting to a conditional dependency using Requires.jl, it is
+preferred one creates subpackages, i.e. smaller independent packages kept within the same Github repository
 with independent versioning and package management. An example of this is seen in
-[`Optimization.jl`](https://github.com/SciML/Optimization.jl) which has subpackages like
-[`OptimizationBBO.jl`](https://github.com/SciML/Optimization.jl/tree/master/lib/OptimizationBBO) for
-`BlackBoxOptim.jl` support.
+[Optimization.jl](https://github.com/SciML/Optimization.jl) which has subpackages like
+[OptimizationBBO.jl](https://github.com/SciML/Optimization.jl/tree/master/lib/OptimizationBBO) for
+BlackBoxOptim.jl support.
 
 Some important interface packages to know about are:
 
-- [`ChainRulesCore.jl`](https://github.com/JuliaDiff/ChainRulesCore.jl)
-- [`RecipesBase.jl`](https://github.com/JuliaPlots/RecipesBase.jl)
-- [`ArrayInterface.jl`](https://github.com/JuliaArrays/ArrayInterface.jl)
-- [`CommonSolve.jl`](https://github.com/SciML/CommonSolve.jl)
-- [`SciMLBase.jl`](https://github.com/SciML/SciMLBase.jl)
+- [ChainRulesCore.jl](https://github.com/JuliaDiff/ChainRulesCore.jl)
+- [RecipesBase.jl](https://github.com/JuliaPlots/RecipesBase.jl)
+- [ArrayInterface.jl](https://github.com/JuliaArrays/ArrayInterface.jl)
+- [CommonSolve.jl](https://github.com/SciML/CommonSolve.jl)
+- [SciMLBase.jl](https://github.com/SciML/SciMLBase.jl)
 
 ### Functions should either attempt to be non-allocating and reuse caches, or treat inputs as immutable
 
@@ -249,7 +249,7 @@ in which case this should be `mul!` for consistency).
 
 Similarly, when defining types, using `struct` is preferred to `mutable struct` unless mutating
 the struct is a common occurrence. Even if mutating the struct is a common occurrence, see whether
-using [`Setfield.jl`](https://github.com/jw3126/Setfield.jl) is sufficient. The compiler will optimize
+using [Setfield.jl](https://github.com/jw3126/Setfield.jl) is sufficient. The compiler will optimize
 the construction of immutable structs, and thus this can be more efficient if it's not too much of a
 code hassle.
 
@@ -323,8 +323,8 @@ or
 While you can use `A\b` to do a linear solve inside a package, that does not mean that you should.
 This interface is only sufficient for performing factorizations, and so that limits the scaling
 choices, the types of `A` that can be supported, etc. Instead, linear solves within packages should
-use `LinearSolve.jl`. Similarly, nonlinear solves should use `NonlinearSolve.jl`. Optimization should use
-`Optimization.jl`. This allows the full generic choice to be given to the user without depending
+use LinearSolve.jl. Similarly, nonlinear solves should use NonlinearSolve.jl. Optimization should use
+Optimization.jl. Etc. This allows the full generic choice to be given to the user without depending
 on every solver package (effectively recreating the generic interfaces within each package).
 
 ### Functions should capture one underlying principle
