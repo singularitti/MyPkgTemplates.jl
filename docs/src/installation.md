@@ -1,4 +1,4 @@
-# [Installation guide](@id installation)
+# [Installation Guide](@id installation)
 
 Here are the installation instructions for package
 [{{{PKG}}}](https://github.com/{{{USER}}}/{{{PKG}}}.jl).

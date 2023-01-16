@@ -15,7 +15,7 @@ If you have additional tips, please either
 
 ## Installation problems
 
-### I cannot find the `julia` executable
+### Cannot find the `julia` executable
 
 Make sure you have Julia installed in your environment. Please download the latest
 [stable version](https://julialang.org/downloads/#current_stable_release) for your platform.
@@ -35,7 +35,7 @@ administrator.
 
 ## Loading {{{PKG}}}
 
-### Why is Julia compiling/loading modules so slow? What can I do?
+### Julia compiles/loads slow
 
 First, we recommend you download the latest version of Julia. Usually, the newest version
 has the best performance.
