@@ -3,6 +3,7 @@ module MyPkgTemplates
 using PkgTemplates
 using PkgTemplates:
     Plugin,
+    FilePlugin,
     default_file,
     gen_file,
     render_file,
@@ -11,7 +12,7 @@ using PkgTemplates:
     @plugin,
     @with_kw_noshow
 
-import PkgTemplates: view, user_view, hook
+import PkgTemplates: view, user_view, hook, source, destination
 
 export build
 
@@ -23,13 +24,18 @@ export build
     troubleshooting_md::String = "docs/src/troubleshooting.md"
 end
 
-@plugin struct JuliaFormatter <: Plugin
-    toml::String = "templates/.JuliaFormatter.toml"
+@plugin struct JuliaFormatter <: FilePlugin
+    file::String = "templates/.JuliaFormatter.toml"
 end
+
+source(p::JuliaFormatter) = p.file
+
+destination(::JuliaFormatter) = ".JuliaFormatter.toml"
 
 function view(::MyDocs, t::Template, pkg::AbstractString)
     return Dict("USER" => t.user, "PKG" => pkg, "jl" => "1.6.7", "branch" => getbranch(t))
 end
+view(::JuliaFormatter, ::Template, ::AbstractString) = Dict{String,Any}()
 
 function user_view(::Readme, t::Template, pkg::AbstractString)
     return Dict("USER" => t.user, "PKG" => pkg, "branch" => getbranch(t))
