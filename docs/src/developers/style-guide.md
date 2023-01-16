@@ -2,7 +2,7 @@
 
 ```@contents
 Pages = ["style.md"]
-Depth = 2:3
+Depth = 3
 ```
 
 This section describes the coding style rules that apply to our code and that
