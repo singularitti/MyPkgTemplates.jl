@@ -47,7 +47,7 @@ Usage questions can be posted on
 
 Contributions are very welcome, as are feature requests and suggestions. Please open an
 [issue](https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues)
-if you encounter any problems. The [contributing](@ref) page has
+if you encounter any problems. The [Contributing](@ref) page has
 a few guidelines that should be followed when opening pull requests and contributing code.
 
 ## Manual outline
