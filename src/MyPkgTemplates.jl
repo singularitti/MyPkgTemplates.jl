@@ -18,7 +18,8 @@ export build
 @plugin struct MyDocs <: Plugin
     installation_md::String = "docs/src/installation.md"
     contributing_md::String = "docs/src/developers/contributing.md"
-    style_md::String = "docs/src/developers/style.md"
+    style_md::String = "docs/src/developers/style-guide.md"
+    design_md::String = "docs/src/developers/design-principles.md"
     troubleshooting_md::String = "docs/src/troubleshooting.md"
 end
 
