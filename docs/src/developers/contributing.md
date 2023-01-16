@@ -2,6 +2,7 @@
 
 ```@contents
 Pages = ["contributing.md"]
+Depth = 2:2
 ```
 
 Welcome! This document explains some ways you can contribute to {{{PKG}}}.
@@ -68,10 +69,10 @@ Finally, you can also contribute code to {{{PKG}}}!
     If you do not have experience with Git, GitHub, and Julia development, the
     first steps can be a little daunting. However, there are lots of tutorials
     available online, including:
-    * [GitHub](https://guides.github.com/activities/hello-world/)
-    * [Git and GitHub](https://try.github.io/)
-    * [Git](https://git-scm.com/book/en/v2)
-    * [Julia package development](https://docs.julialang.org/en/v1/stdlib/Pkg/#Developing-packages-1)
+    - [GitHub](https://guides.github.com/activities/hello-world/)
+    - [Git and GitHub](https://try.github.io/)
+    - [Git](https://git-scm.com/book/en/v2)
+    - [Julia package development](https://docs.julialang.org/en/v1/stdlib/Pkg/#Developing-packages-1)
 
 Once you are familiar with Git and GitHub, the workflow for contributing code to
 {{{PKG}}} is similar to the following:
@@ -98,7 +99,7 @@ and click the "Fork" button in the top-right corner. This will create a copy of
 
 ### Step 3: install {{{PKG}}} locally
 
-Similar to [installation](@ref), open the Julia REPL and run:
+Similar to [Installation](@ref), open the Julia REPL and run:
 
 ```@repl
 using Pkg
@@ -150,13 +151,13 @@ directory.
 
 Make sure you:
 
-* Follow the [Style guide](@ref style) and [run `JuliaFormatter.jl`](@ref formatter)
-* Add tests and documentation for any changes or new features
+- Follow our [Style Guide](@ref style) and [run `JuliaFormatter.jl`](@ref formatter)
+- Add tests and documentation for any changes or new features
 
 !!! tip
     When you change the source code, you'll need to restart Julia for the
     changes to take effect. This is a pain, so install
-    [`Revise.jl`](https://github.com/timholy/Revise.jl).
+    [Revise.jl](https://github.com/timholy/Revise.jl).
 
 ### Step 6a: test your code changes
 
