@@ -74,9 +74,10 @@ According to PEP8:
 
 > A style guide is about consistency. Consistency with this style guide is important.
 > Consistency within a project is more important. Consistency within one module or function is the most important.
-
-> But most importantly: know when to be inconsistent -- sometimes the style guide just doesn't apply.
-> When in doubt, use your best judgment. Look at other examples and decide what looks best. And don't hesitate to ask!
+>
+> However, know when to be inconsistent—sometimes style guide recommendations just aren't
+> applicable. When in doubt, use your best judgment. Look at other examples and decide what
+> looks best. And don’t hesitate to ask!
 
 ### Community Contribution Guidelines
 
