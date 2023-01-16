@@ -1,22 +1,20 @@
-# [Style guide and design principles](@id style)
+# [Style Guide](@id style)
 
 ```@contents
 Pages = ["style.md"]
+Depth = 2:3
 ```
-
-## Style guide
 
 This section describes the coding style rules that apply to our code and that
 we recommend you to use it also.
 
-In some cases, our style guide diverges from the
-[Julia style guide](https://docs.julialang.org/en/v1/manual/style-guide/) (Please read it!).
+In some cases, our style guide diverges from Julia's official
+[Style Guide](https://docs.julialang.org/en/v1/manual/style-guide/) (Please read it!).
 All such cases will be explicitly noted and justified.
 
 Our style guide adopts many recommendations from the
-[Blue style guide](https://github.com/invenia/BlueStyle).
-
-Please read the [Blue style guide](https://github.com/invenia/BlueStyle)
+[BlueStyle](https://github.com/invenia/BlueStyle).
+Please read the [BlueStyle](https://github.com/invenia/BlueStyle)
 before contributing to this package.
 If not following, your pull requests may not be accepted.
 
@@ -26,6 +24,8 @@ If not following, your pull requests may not be accepted.
     of the surrounding code (i.e., leave the code tidier than when you
     started). If large changes are needed, consider separating them into
     another pull request.
+
+## Formatting
 
 ### [Run JuliaFormatter](@id formatter)
 
