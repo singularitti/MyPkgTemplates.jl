@@ -1,5 +1,10 @@
 # Troubleshooting
 
+```@contents
+Pages = ["troubleshooting.md"]
+Depth = 2:3
+```
+
 This page collects some possible errors you may encounter and trick how to fix them.
 If you have some questions about how to use this code, you are welcome to
 [discuss with us](https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions).
