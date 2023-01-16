@@ -23,6 +23,10 @@ export build
     troubleshooting_md::String = "docs/src/troubleshooting.md"
 end
 
+@plugin struct JuliaFormatter <: Plugin
+    toml::String = "templates/.JuliaFormatter.toml"
+end
+
 function view(::MyDocs, t::Template, pkg::AbstractString)
     return Dict("USER" => t.user, "PKG" => pkg, "jl" => "1.6.7", "branch" => getbranch(t))
 end
@@ -74,6 +78,7 @@ function build(; user="MineralsCloud", dir="~/.julia/dev", branch="main")
             Documenter{GitHubActions}(; index_md="docs/src/index.md"),
             Readme(; file="README.md"),
             MyDocs(),
+            JuliaFormatter(),
         ],
     )
 end
