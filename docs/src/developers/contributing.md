@@ -164,7 +164,7 @@ Make sure you:
 To test that your changes work, run the {{{PKG}}} test-suite by opening Julia and
 running:
 
-```julia
+```julia-repl
 julia> cd(joinpath(DEPOT_PATH[1], "{{{PKG}}}"))
 
 julia> using Pkg
@@ -181,7 +181,7 @@ julia> Pkg.test()
 !!! tip
     If you are using Revise.jl, you can also run the tests by calling `include`:
 
-    ```julia
+    ```julia-repl
     include("test/runtests.jl")
     ```
 
@@ -191,7 +191,7 @@ julia> Pkg.test()
 
 Open Julia, then run:
 
-```julia
+```julia-repl
 julia> cd(joinpath(DEPOT_PATH[1], "{{{PKG}}}", "docs"))
 
 julia> using Pkg
