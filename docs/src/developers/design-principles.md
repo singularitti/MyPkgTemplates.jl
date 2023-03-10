@@ -240,23 +240,6 @@ code with closures; if someone is looking for type instabilities, this is faster
 not contain closures.
 Furthermore, if you want to update variables in an outer scope, do so explicitly with `Ref`s or self
 defined structs.
-For example,
-
-```julia
-map(Base.Fix2(getindex, i), vector_of_vectors)
-```
-
-is preferred over
-
-```julia
-map(v -> v[i], vector_of_vectors)
-```
-
-or
-
-```julia
-[v[i] for v in vector_of_vectors]
-```
 
 ## Numerical functionality should use the appropriate generic numerical interfaces
 
