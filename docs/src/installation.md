@@ -1,5 +1,10 @@
 # [Installation Guide](@id installation)
 
+```@contents
+Pages = ["installation.md"]
+Depth = 2
+```
+
 Here are the installation instructions for package
 [{{{PKG}}}](https://github.com/{{{USER}}}/{{{PKG}}}.jl).
 If you have trouble installing it, please refer to our [Troubleshooting](@ref) page
