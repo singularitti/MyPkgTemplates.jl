@@ -165,7 +165,7 @@ To test that your changes work, run the {{{PKG}}} test-suite by opening Julia an
 running:
 
 ```julia-repl
-julia> cd(joinpath(DEPOT_PATH[1], "{{{PKG}}}"))
+julia> cd(joinpath(DEPOT_PATH[1], "dev", "{{{PKG}}}"))
 
 julia> using Pkg
 
@@ -192,7 +192,7 @@ julia> Pkg.test()
 Open Julia, then run:
 
 ```julia-repl
-julia> cd(joinpath(DEPOT_PATH[1], "{{{PKG}}}", "docs"))
+julia> cd(joinpath(DEPOT_PATH[1], "dev", "{{{PKG}}}", "docs"))
 
 julia> using Pkg
 
