@@ -5,7 +5,7 @@ Pages = ["troubleshooting.md"]
 Depth = 2
 ```
 
-This page collects some possible errors you may encounter and trick how to fix them.
+This page collects some possible errors you may encounter along with tips on how to fix them.
 If you have some questions about how to use this code, you are welcome to
 [discuss with us](https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions).
 
@@ -40,7 +40,7 @@ administrator.
 First, we recommend you download the latest version of Julia. Usually, the newest version
 has the best performance.
 
-If you just want Julia to do a simple task and only once, you could start the Julia REPL with
+If you need to use Julia for a simple, one-time task, you can start the Julia REPL with
 
 ```bash
 julia --compile=min
