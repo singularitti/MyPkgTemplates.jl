@@ -15,6 +15,10 @@ using various continuous integration services for its validity.
 This repository is created and maintained by
 [@singularitti](https://github.com/singularitti), and contributions are highly welcome.
 
+## Package Features
+
+
+
 ## Installation
 
 The package can be installed with the Julia package manager.
@@ -42,7 +46,7 @@ Windows.
 
 ## Questions and contributions
 
-You can post usage questions on 
+You can post usage questions on
 [our discussion page](https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions).
 
 We welcome contributions, feature requests, and suggestions. If you encounter any problems,
@@ -54,11 +58,11 @@ a few guidelines that should be followed when opening pull requests and contribu
 
 ```@contents
 Pages = [
-    "installation.md",
+    "man/installation.md",
+    "man/troubleshooting.md",
     "developers/contributing.md",
     "developers/style-guide.md",
     "developers/design-principles.md",
-    "troubleshooting.md",
 ]
 Depth = 3
 ```
@@ -66,11 +70,11 @@ Depth = 3
 ## Library outline
 
 ```@contents
-Pages = ["public.md"]
+Pages = ["lib/public.md", "lib/internals.md"]
 ```
 
 ### [Index](@id main-index)
 
 ```@index
-Pages = ["public.md"]
+Pages = ["lib/public.md"]
 ```
