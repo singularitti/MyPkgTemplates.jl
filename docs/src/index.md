@@ -9,11 +9,11 @@ Documentation for [{{{PKG}}}](https://github.com/{{{USER}}}/{{{PKG}}}.jl).
 See the [Index](@ref main-index) for the complete list of documented functions
 and types.
 
-The code is [hosted on GitHub](https://github.com/{{{USER}}}/{{{PKG}}}.jl),
-with some continuous integration services to test its validity.
+The code, which is [hosted on GitHub](https://github.com/{{{USER}}}/{{{PKG}}}.jl), is tested
+using various continuous integration services for its validity.
 
-This repository is created and maintained by [@singularitti](https://github.com/singularitti).
-You are very welcome to contribute.
+This repository is created and maintained by
+[@singularitti](https://github.com/singularitti), and contributions are highly welcome.
 
 ## Installation
 
@@ -37,17 +37,17 @@ import Pkg; Pkg.add("{{{PKG}}}")
 
 ## Project status
 
-The package is tested against, and being developed for, Julia `1.6` and above on Linux,
-macOS, and Windows.
+The package is developed for and tested against Julia `v1.6` and above on Linux, macOS, and
+Windows.
 
 ## Questions and contributions
 
-Usage questions can be posted on
+You can post usage questions on 
 [our discussion page](https://github.com/{{{USER}}}/{{{PKG}}}.jl/discussions).
 
-Contributions are very welcome, as are feature requests and suggestions. Please open an
-[issue](https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues)
-if you encounter any problems. The [Contributing](@ref) page has
+We welcome contributions, feature requests, and suggestions. If you encounter any problems,
+please open an [issue](https://github.com/{{{USER}}}/{{{PKG}}}.jl/issues).
+The [Contributing](@ref) page has
 a few guidelines that should be followed when opening pull requests and contributing code.
 
 ## Manual outline
