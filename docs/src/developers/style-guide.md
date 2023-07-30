@@ -31,13 +31,14 @@ We use the options contained in [`.JuliaFormatter.toml`](https://github.com/{{{U
 
 To format your code, `cd` to the {{{PKG}}} directory, then run:
 
-```@repl
-using Pkg
-Pkg.add("JuliaFormatter")
-using JuliaFormatter: format
-format("docs")
-format("src")
-format("test")
+```julia-repl
+julia> using Pkg
+
+julia> Pkg.add("JuliaFormatter")
+
+julia> using JuliaFormatter: format
+
+julia> format("docs"); format("src"); format("test")
 ```
 
 !!! info
