@@ -29,7 +29,7 @@ using various continuous integration services for its validity.
 This repository is created and maintained by
 [@singularitti](https://github.com/singularitti), and contributions are highly welcome.
 
-## Package Features
+## Package features
 
 
 
