@@ -36,13 +36,14 @@ This repository is created and maintained by
 ## Installation
 
 The package can be installed with the Julia package manager.
-From the Julia REPL, type `]` to enter the Pkg REPL mode and run:
+From [the Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/), type `]` to enter
+the [Pkg mode](https://docs.julialang.org/en/v1/stdlib/REPL/#Pkg-mode) and run:
 
-```
+```julia-repl
 pkg> add {{{PKG}}}
 ```
 
-Or, equivalently, via the [`Pkg` API](https://pkgdocs.julialang.org/v1/getting-started/):
+Or, equivalently, via [`Pkg.jl`](https://pkgdocs.julialang.org/v1/):
 
 ```julia
 julia> import Pkg; Pkg.add("{{{PKG}}}")

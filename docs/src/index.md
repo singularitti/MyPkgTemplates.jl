@@ -1,7 +1,3 @@
-```@meta
-CurrentModule = {{{PKG}}}
-```
-
 # {{{PKG}}}
 
 Documentation for [{{{PKG}}}](https://github.com/{{{USER}}}/{{{PKG}}}.jl).
@@ -22,13 +18,14 @@ This repository is created and maintained by
 ## Installation
 
 The package can be installed with the Julia package manager.
-From the Julia REPL, type `]` to enter the Pkg REPL mode and run:
+From [the Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/), type `]` to enter
+the [Pkg mode](https://docs.julialang.org/en/v1/stdlib/REPL/#Pkg-mode) and run:
 
-```julia
+```julia-repl
 pkg> add {{{PKG}}}
 ```
 
-Or, equivalently, via the `Pkg` API:
+Or, equivalently, via [`Pkg.jl`](https://pkgdocs.julialang.org/v1/):
 
 ```@repl
 import Pkg; Pkg.add("{{{PKG}}}")
