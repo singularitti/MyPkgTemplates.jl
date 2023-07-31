@@ -32,7 +32,7 @@ improved. Moreover, since it is your question, you are probably the best-placed
 person to improve it!
 
 The docs are written in Markdown and are built using
-[Documenter.jl](https://github.com/JuliaDocs/Documenter.jl).
+[`Documenter.jl`](https://github.com/JuliaDocs/Documenter.jl).
 You can find the source of all the docs
 [here](https://github.com/{{{USER}}}/{{{PKG}}}.jl/tree/{{{branch}}}/docs).
 
@@ -99,7 +99,7 @@ and click the "Fork" button in the top-right corner. This will create a copy of
 
 ### Step 3: install {{{PKG}}} locally
 
-Similar to [Installation](@ref), open the Julia REPL and run:
+Similar to [Installation Guide](@ref), open the Julia REPL and run:
 
 ```@repl
 using Pkg
@@ -155,9 +155,9 @@ Make sure you:
 - Add tests and documentation for any changes or new features.
 
 !!! tip
-    When you change the source code, you'll need to restart Julia for the
-    changes to take effect. This is a pain, so install
-    [Revise.jl](https://github.com/timholy/Revise.jl).
+    When you change the source code, you will need to restart Julia for the
+    changes to take effect. If this is a pain, install
+    [`Revise.jl`](https://github.com/timholy/Revise.jl).
 
 ### Step 6a: test your code changes
 
@@ -179,7 +179,7 @@ julia> Pkg.test()
     Running the tests might take a long time.
 
 !!! tip
-    If you are using Revise.jl, you can also run the tests by calling `include`:
+    If you are using `Revise.jl`, you can also run the tests by calling `include`:
 
     ```julia-repl
     include("test/runtests.jl")
@@ -227,7 +227,7 @@ git commit -m "A descriptive message of the changes"
 git push -u GITHUB_ACCOUNT my_new_branch
 ```
 
-Then go to [https://github.com/{{{USER}}}/{{{PKG}}}.jl/pulls](https://github.com/{{{USER}}}/{{{PKG}}}.jl/pulls)
+Then go to [our pull request page](https://github.com/{{{USER}}}/{{{PKG}}}.jl/pulls)
 and follow the instructions that pop up to open a pull request.
 
 ### Step 8: respond to comments
