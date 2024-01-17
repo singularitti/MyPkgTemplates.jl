@@ -1,27 +1,10 @@
 # {{{PKG}}}
 
-|                                 **Documentation**                                  |                                                                                                 **Build Status**                                                                                                 |                                        **Others**                                         |
-| :--------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
-| [![Stable][docs-stable-img]][docs-stable-url] [![Dev][docs-dev-img]][docs-dev-url] | [![Build Status][gha-img]][gha-url] [![Build Status][appveyor-img]][appveyor-url] [![Build Status][cirrus-img]][cirrus-url] [![pipeline status][gitlab-img]][gitlab-url] [![Coverage][codecov-img]][codecov-url] | [![GitHub license][license-img]][license-url] [![Code Style: Blue][style-img]][style-url] |
-
-[docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
-[docs-stable-url]: https://{{{USER}}}.github.io/{{{PKG}}}.jl/stable
-[docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
-[docs-dev-url]: https://{{{USER}}}.github.io/{{{PKG}}}.jl/dev
-[gha-img]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/workflows/CI/badge.svg
-[gha-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/actions
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/{{{USER}}}/{{{PKG}}}.jl?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/singularitti/{{{PKG}}}-jl
-[cirrus-img]: https://api.cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl.svg
-[cirrus-url]: https://cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl
-[gitlab-img]: https://gitlab.com/singularitti/{{{PKG}}}.jl/badges/{{{branch}}}/pipeline.svg
-[gitlab-url]: https://gitlab.com/singularitti/{{{PKG}}}.jl/-/pipelines
-[codecov-img]: https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl/branch/{{{branch}}}/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl
-[license-img]: https://img.shields.io/github/license/{{{USER}}}/{{{PKG}}}.jl
-[license-url]: https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/{{{branch}}}/LICENSE
-[style-img]: https://img.shields.io/badge/code%20style-blue-4495d1.svg
-[style-url]: https://github.com/invenia/BlueStyle
+| **Documentation** | [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://{{{USER}}}.github.io/{{{PKG}}}.jl/stable/) [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://{{{USER}}}.github.io/{{{PKG}}}.jl/dev/)                                                                                                                                                                                                                                                                                                 |
+| :---------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Build Status**  | [![Build Status](https://github.com/{{{USER}}}/{{{PKG}}}.jl/actions/workflows/CI.yml/badge.svg?branch={{{branch}}})](https://github.com/{{{USER}}}/{{{PKG}}}.jl/actions/workflows/CI.yml?query=branch%3A{{{branch}}}) [![Build Status](https://ci.appveyor.com/api/projects/status/github/{{{USER}}}/{{{PKG}}}.jl?svg=true)](https://ci.appveyor.com/project/{{{USER}}}/{{{PKG}}}-jl)[![Build Status](https://api.cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl.svg)](https://cirrus-ci.com/github/{{{USER}}}/{{{PKG}}}.jl) |
+|   **Coverage**    | [![Coverage](https://github.com/{{{USER}}}/{{{PKG}}}.jl/badges/{{{branch}}}/coverage.svg)](https://github.com/{{{USER}}}/{{{PKG}}}.jl/commits/{{{branch}}}) [![Coverage](https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl/branch/{{{branch}}}/graph/badge.svg)](https://codecov.io/gh/{{{USER}}}/{{{PKG}}}.jl)                                                                                                                                                                                                                |
+|    **Others**     | [![Code Style: Blue](https://img.shields.io/badge/code style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle) [![License](https://img.shields.io/github/license/{{{USER}}}/{{{PKG}}}.jl)](https://github.com/{{{USER}}}/{{{PKG}}}.jl/blob/{{{branch}}}/LICENSE)                                                                                                                                                                                                                                                     |
 
 The code, which is [hosted on GitHub](https://github.com/{{{USER}}}/{{{PKG}}}.jl), is tested
 using various continuous integration services for its validity.
