@@ -16,6 +16,8 @@ import PkgTemplates: view, user_view, hook, source, destination
 
 export build
 
+const LTS = v"1.6.7"
+
 @plugin struct MyDocs <: Plugin
     installation_md::String = "docs/src/man/installation.md"
     contributing_md::String = "docs/src/developers/contributing.md"
@@ -33,7 +35,9 @@ source(p::JuliaFormatter) = p.file
 destination(::JuliaFormatter) = ".JuliaFormatter.toml"
 
 function view(::MyDocs, t::Template, pkg::AbstractString)
-    return Dict("USER" => t.user, "PKG" => pkg, "jl" => "1.6.7", "branch" => getbranch(t))
+    return Dict(
+        "USER" => t.user, "PKG" => pkg, "jl" => string(LTS), "branch" => getbranch(t)
+    )
 end
 view(::JuliaFormatter, ::Template, ::AbstractString) = Dict{String,Any}()
 
@@ -65,26 +69,28 @@ function build(; user="MineralsCloud", dir="~/.julia/dev", branch="main")
                 x86=true,
                 osx=true,
                 windows=true,
-                extra_versions=["1.6", "1.7", "1.8", "1.9", "nightly"],
+                extra_versions=["1.6", "1.7", "1.8", "1.9", "1.10", "nightly"],
             ),
-            AppVeyor(; x86=true, extra_versions=["1.6", "1.7", "1.8", "1.9", "nightly"]),
+            AppVeyor(; x86=true, extra_versions=["1.6", "1.7", "1.9", "1.10", "nightly"]),
             CirrusCI(;
-                extra_versions=["1.6", "1.7", "1.8", "1.9"],
+                extra_versions=["1.6", "1.7", "1.8", "1.10"],
                 image="freebsd-12-1-release-amd64",
                 file="templates/cirrus.yml",
             ),
             GitLabCI(; extra_versions=["1.6", "1.7", "1.8", "1.9"]),
             CompatHelper(),
             RegisterAction(),
-            PkgEvalBadge(),
+            BlueStyleBadge(),
             ColPracBadge(),
             TagBot(),
+            Dependabot(),
             License(),
             Codecov(),
             Documenter{GitHubActions}(; index_md="docs/src/index.md"),
             Readme(; file="README.md"),
             MyDocs(),
             JuliaFormatter(),
+            PkgBenchmark(),
         ],
     )
 end
