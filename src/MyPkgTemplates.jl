@@ -41,13 +41,10 @@ function view(::MyDocs, t::Template, pkg::AbstractString)
 end
 view(::JuliaFormatter, ::Template, ::AbstractString) = Dict{String,Any}()
 
-function user_view(::Readme, t::Template, pkg::AbstractString)
-    return Dict("USER" => t.user, "PKG" => pkg, "branch" => getbranch(t))
-end
+user_view(::Readme, t::Template, pkg::AbstractString) =
+    Dict("USER" => t.user, "PKG" => pkg, "branch" => getbranch(t))
 
-function getbranch(t::Template)
-    return only(filter(x -> x isa Git, t.plugins)).branch
-end
+getbranch(t::Template) = only(filter(x -> x isa Git, t.plugins)).branch
 
 function hook(p::MyDocs, t::Template, pkg_dir::AbstractString)
     pkg = basename(pkg_dir)
