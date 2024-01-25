@@ -34,8 +34,8 @@ julia> import Pkg; Pkg.add("{{{PKG}}}")
 
 ## Documentation
 
-- [**STABLE**][docs-stable-url] — **documentation of the most recently tagged version.**
-- [**DEV**][docs-dev-url] — _documentation of the in-development version._
+- [**STABLE**](https://{{{USER}}}.github.io/{{{PKG}}}.jl/stable/) — **documentation of the most recently tagged version.**
+- [**DEV**](https://{{{USER}}}.github.io/{{{PKG}}}.jl/dev/) — _documentation of the in-development version._
 
 ## Project status
 
