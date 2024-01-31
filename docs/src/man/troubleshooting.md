@@ -15,7 +15,7 @@ If you have additional tips, please either
 
 ## Cannot find the Julia executable
 
-nsure that Julia is installed in your environment. Please download the latest
+Ensure that Julia is installed in your environment. Please download the latest
 [stable version](https://julialang.org/downloads/#current_stable_release) for your platform,
 and it's recommended to do it indirectly with
 [Juliaup](https://github.com/JuliaLang/juliaup) as explained on that page.
