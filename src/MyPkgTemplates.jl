@@ -56,7 +56,7 @@ function hook(p::MyDocs, t::Template, pkg_dir::AbstractString)
     end
 end
 
-function build(; user="MineralsCloud", dir="~/.julia/dev", branch="main")
+function build(; user="singularitti", dir="~/.julia/dev", branch="main")
     return Template(;
         user=user,
         dir=dir,
@@ -66,15 +66,15 @@ function build(; user="MineralsCloud", dir="~/.julia/dev", branch="main")
                 x86=true,
                 osx=true,
                 windows=true,
-                extra_versions=["1.6", "1.7", "1.8", "1.9", "1.10", "nightly"],
+                extra_versions=["1.9", "1.10", "1.11", "nightly"],
             ),
-            AppVeyor(; x86=true, extra_versions=["1.6", "1.7", "1.9", "1.10", "nightly"]),
+            AppVeyor(; x86=true, extra_versions=["1.9", "1.10", "nightly"]),
             CirrusCI(;
-                extra_versions=["1.6", "1.7", "1.8", "1.10"],
+                extra_versions=["1.9", "1.11"],
                 image="freebsd-12-1-release-amd64",
                 file="templates/cirrus.yml",
             ),
-            GitLabCI(; extra_versions=["1.6", "1.7", "1.8", "1.9"]),
+            GitLabCI(; extra_versions=["1.9", "1.10", "1.11"]),
             CompatHelper(),
             RegisterAction(),
             BlueStyleBadge(),
